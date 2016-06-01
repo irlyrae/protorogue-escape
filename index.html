@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <title>escape</title>
+        <script src="ondras-rot.js-e58e99f/rot.js"></script>
+        <script src="speak-js-master/speakClient.js"></script>
+        <script src="protorogue.js"></script>
+        <script src="voice.js"></script>
+        <style>
+body {
+  font-family: "Consolas", "Liberation Mono", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+input {
+  font-family: "Consolas", "Liberation Mono", sans-serif;
+}
+
+#title {
+  font-weight: bold;
+}
+
+#villains {
+  color: red;
+}
+</style>
+    </head>
+    <body>
+        <h1>escape: <span id="yr"></span></h1>
+        <form name="dataform" id="dataform" action="/" method="post" onload='document.getElementById("dataform").addEventListener("submit", function(event){event.preventDefault()});'>
+<ul>
+<li>Name: <input type="text" id="name1">  <select id="option1">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+<li>Name: <input type="text" id="name2">  <select id="option2">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+<li>Name: <input type="text" id="name3">  <select id="option3">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+<li>Name: <input type="text" id="name4">  <select id="option4">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+<li>Name: <input type="text" id="name5">  <select id="option5">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+<li>Name: <input type="text" id="name6">  <select id="option6">
+  <option disabled selected value> -- select an option -- </option>
+    <option value="physics">Physics/Astro/APh</option>
+    <option value="math">Math/ACM</option>
+    <option value="chem">Chem/ChemE</option>
+    <option value="bio">Bio/BioE</option>
+    <option value="cs">Computer Science/EE</option>
+    <option value="hum">Hum</option>
+    <option value="me">MechE</option>
+    <option value="ec">BEM/Econ</option>
+  </select></li>
+</ul>
+</form>
+<button id="submit" type="button" onclick="Game.init()">Submit!</button>
+        <div id="audio"></div>
+    </body>
+</html>
